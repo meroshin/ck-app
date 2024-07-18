@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ck-app/static/css/main.1d766016.css",
+    "main.js": "/ck-app/static/js/main.57e36a3c.js",
+    "static/js/453.41a81913.chunk.js": "/ck-app/static/js/453.41a81913.chunk.js",
+    "static/media/COCO-KERALA-header.png": "/ck-app/static/media/COCO-KERALA-header.5006cf9ec8d168d6dfc2.png",
+    "index.html": "/ck-app/index.html",
+    "main.1d766016.css.map": "/ck-app/static/css/main.1d766016.css.map",
+    "main.57e36a3c.js.map": "/ck-app/static/js/main.57e36a3c.js.map",
+    "453.41a81913.chunk.js.map": "/ck-app/static/js/453.41a81913.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d766016.css",
+    "static/js/main.57e36a3c.js"
+  ]
+}
