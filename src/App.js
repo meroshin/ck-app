@@ -7,11 +7,7 @@ function App() {
   const [name, setName] = useState('Jaimy Joseph');
   const [phone, setPhone] = useState('+91 9048244527');
   const [email, setEmail] = useState('jaimy.cocokerala.com');
-<<<<<<< HEAD
   const [desig, setDesig] = useState('Managing Director & CEO');
-=======
-    const [desig, setDesig] = useState('Managing Director & CEO');
->>>>>>> dc495d978cae260a894e5444377cbbc7b9807506
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const footerRef = useRef(null);
 
@@ -73,11 +69,7 @@ function App() {
   const inputEventphone = (event) => {
     setPhone(event.target.value);
   };
-<<<<<<< HEAD
-  const inputEventdesig = (event) => {
-=======
     const inputEventdesig = (event) => {
->>>>>>> dc495d978cae260a894e5444377cbbc7b9807506
     setDesig(event.target.value);
   };
 
