@@ -7,6 +7,7 @@ function App() {
   const [name, setName] = useState('Jaimy Joseph');
   const [phone, setPhone] = useState('+91 9048244527');
   const [email, setEmail] = useState('jaimy.cocokerala.com');
+  const [desig, setDesig] = useState('Managing Director & CEO');
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const footerRef = useRef(null);
 
@@ -54,6 +55,9 @@ function App() {
   };
   const inputEventphone = (event) => {
     setPhone(event.target.value);
+  };
+  const inputEventdesig = (event) => {
+    setDesig(event.target.value);
   };
 
   return (
@@ -138,7 +142,7 @@ function App() {
               <div className="col left-font" id="left-font" style={{ width: '50%', textAlign: 'left', overflow: 'hidden' }}>
                 <h6 style={{ textTransform: 'uppercase', fontWeight: 800, marginBottom: '5px' }}>{name}</h6>
 
-                <p style={{ margin: '5px 0', fontSize: '10px' }}>Managing Director & CEO</p>
+                <p style={{ margin: '5px 0', fontSize: '10px' }}>{desig}</p>
                 <p style={{ margin: '5px 0', fontSize: '10px' }}>Phone: {phone}</p>
                 <p style={{ margin: '5px 0', fontSize: '10px' }}>Email: {email}</p>
               </div>
@@ -184,6 +188,10 @@ function App() {
           <label>
             Name:
             <input type="text" onChange={inputEvent} />
+          </label>
+          <label>
+           Designation:
+            <input type="text" onChange={inputEventdesig} />
           </label>
           <label>
             Phone:
