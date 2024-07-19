@@ -32,7 +32,19 @@ function App() {
       setTimeout(() => {
         const footerElement = footerRef.current;
         html2canvas(footerElement).then((canvas) => {
-          canvas.toBlob((blob) => {
+          const originalCanvasWidth = canvas.width;
+          const scaleFactor = 600 / originalCanvasWidth;
+
+
+          const resizedCanvas = document.createElement('canvas');
+          const context = resizedCanvas.getContext('2d');
+
+          resizedCanvas.width = 600;
+          resizedCanvas.height = canvas.height * scaleFactor;
+
+          context.drawImage(canvas, 0, 0, resizedCanvas.width, resizedCanvas.height);
+
+          resizedCanvas.toBlob((blob) => {
             const item = new ClipboardItem({ 'image/png': blob });
             navigator.clipboard.write([item]).then(() => {
               alert('Image copied to clipboard!');
@@ -46,6 +58,7 @@ function App() {
       alert('Please try again.');
     }
   };
+
 
   const inputEvent = (event) => {
     setName(event.target.value);
